@@ -1,0 +1,61 @@
+clause is used to define some condition
+jaise ham select se pure tale ko sleect kr kte hain so ham clasue ki help se usme kuch condition bhi kdaal skte hain
+  syntax(where clause)
+SELECT col1, col2 FROM table_name
+ WHERE condition; //sbse peli clause
+
+ //OPERATORS
+ 1.Arithmetic
+ 2. Comparison
+ 3. Logical
+ 4. Bitwuse
+
+ 2.clause (limit clause)  sets an upper limit on numbers of tuples rows to be returened
+
+ SELECT col1,col2 FROM  table_name
+ LIMIT number;  means jitna data aa rha usme se hame kitno ka data chahyeye us time ham ISKO use krte hain
+
+ 3. ORDER BY clause
+ to sort in ascending ASC or descending Order DESC
+  SELECT col1,col2 FROM  table_name
+ORDER BY col_name ASC;
+EX
+SELECT name,age,followers
+FROM user
+ORDER BY followers ASC;
+
+4. Group by clause
+ye multiple  row se group collect krte hain and then usko group kr set han based on one and more column
+
+it collect the data from multiple records and grups the result by one or more column
+
+
+Generally we use group by some aggregration function
+1.COUNT()
+2.MAX()
+3.MIN()
+4.SUM()
+5.AVG()
+EX : SELECT max(followers)
+FROM user;
+SELECT  age 
+FROM user
+GROUP BY age;
+group banane ke baad jo kaam hoga wo aggregriate function s hoga
+//
+SELECT count(id)
+FROM user
+GROUP BY age;
+
+
+
+  5.Having clause
+similar to Where clause applies some contion on rows 
+but it is used when we want to apply any condition after grouping
+SELECT col1,col2
+FROM table_name
+GROUP BY col_name(s)
+HAVING condition;
+
+WHERE is for table and HAVING is for gorups
+grouping is necessary for having

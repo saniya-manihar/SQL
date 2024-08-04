@@ -1,0 +1,6 @@
+NOT-NULL  column cannot have  a null value
+UNIQUE   all valyes in a column is differnet
+DEFAULT    set the default value for a column
+salary INT DEFAULT 25000
+CHECK   it can limit the values allowed in a column
+constraint CHECK(age>=18  AND city="Delhi")

@@ -1,0 +1,12 @@
+
+It is imp when we make a table
+Primary key =it automatically makes a column unique and not null but used only for one
+CREATE TABLE temp(
+    id int not null orimary key,
+);
+
+FOREIGN KEY prevents actions that would destory link between tables
+dusre table ki foreigh key pehle table ki foregin key ban jaati hain
+syntax
+FOREIGN KEY (cust_id) reference customer(id)
+key amari ek special column hoti hain kisi bhi column me 

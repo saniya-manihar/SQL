@@ -1,0 +1,3 @@
+truncate(to delete table data)
+table to rahege bs wo khali rahege drop me puri table hi gayab ho jati hain
+TRUNCATE TABLE table_name;

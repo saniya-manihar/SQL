@@ -1,0 +1,6 @@
+means select and show data from database
+syntax
+SELECT col1,col2 FROM  table_name
+SELECT  DISTINCT col1,col2 FROM  table_name
+synrax to show all
+SELECT *FROM table_name;

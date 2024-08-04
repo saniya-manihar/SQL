@@ -1,0 +1,13 @@
+SELECT  column
+FROM   table_name
+WHERE  condition
+GROUP BY  column
+HAVING   condition
+ORDER BY  column ASC
+
+SELECT age ,max(followers)
+FROM user
+WHERE  age>30
+GROUP BY age
+HAVING max(followers) >200
+ORDER BY age ASC

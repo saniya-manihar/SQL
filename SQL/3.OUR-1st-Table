@@ -1,0 +1,19 @@
+CREATE TABLE table_name(
+    column_name1 datatype constraint,
+     column_name2 datatype constraint,
+      column_name3 datatype constraint,
+
+);
+table ke ander ham define krte hain hamara schema kya hone wala hain design kya hone wala hain ya ham kin kin columns ko design krne wale hain
+constraint ko define krne optional hota hain
+//AB AGR TABLE KE ANDER DATA KO INSERT KRNA CAHHTE HAIN TO USE KARENGE INSERT COMMAND KO 
+
+INSERT INTO class
+VALUES
+(2,"saniya","shahnaaz"),
+(3,"zoya","shahnaaz"),
+(4,"hassu","shahnaaz");
+
+
+// agr data ko dekhna chahte ho to 
+SELECT * FROM student;

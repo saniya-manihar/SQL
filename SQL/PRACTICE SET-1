@@ -1,0 +1,79 @@
+CREATE DATABASE college;
+USE  college;
+CREATE TABLE Teacher(
+id INT PRIMARY KEY,
+name VARCHAR(30),
+subject VARCHAR (30),
+salary INT);
+INSERT INTO teacher VALUES
+(23,"AJAY","MATH",50000),
+(40,"BHRAT","ENGLISH",600),
+(20,"CHETAN","CHEMISTRY",450),
+(90,"DIVYA","PHYSICS",700);
+SELECT * FROM teacher;
+
+//SELECT TEACHER WHOSE SALARY IS MOE THAN 55K
+SELECT * FROM teacher 
+WHERE (SALARY >650);
+
+//RENAME THE SALARY TABLE TO NAME CTC
+MTLB HAM apne schema ke ander chages krna chahte hian mtlb alter krna chaha rhe
+ALTER TABLE teacher
+CHANGE column SALARY CTC INT;
+
+//UPDATES salary of alll teacher by giving the an interest of 25%
+UPDATE Teacher
+SET CTC = CTC + (CTC * 0.25)
+WHERE id > 0;
+
+// add a new column for a techer called city the default city should be  gurgoan
+// mtlb ham schema chage kr rhe uske liye ham alter ka use krte hain
+ALTER TABLE teacher
+ADD COLUMN  city VARCHAR (30) DEFAULT "GURGOAN";
+
+//Delete the salary table form teachre table
+ALTER TABLE teacher 
+DROP COLUMN ctc;
+
+//NEW FROM MICROSOFT SQL SERVER MANAGEMENT//
+
+create database hani;
+use hani;
+create table marks(
+
+    id INT PRIMARY KEY,
+    age INT,
+    name VARCHAR(30) NOT NULL,
+    email VARCHAR(30) UNIQUE,
+    followers INT DEFAULT 0,
+    following INT DEFAULT 0,
+    CONSTRAINT chk_age_new CHECK (age >= 13)
+
+);
+
+create table post(
+id int  PRIMARY KEY,
+content varchar(100),
+userid int,
+foreign key( userid )references marks(id));
+
+select* from marks;
+select* from post;
+insert into marks
+(id, age,name,email,followers,following)
+VALUES
+(1,15,'saniya','saniya@123',70,8),
+(2,17,'zoya','zoya@123',80,8),
+(3,15,'nazil','nazil@123',90,89);
+select* from marks;
+insert into post
+(id, content,userid)
+VALUES
+(5,'saniya@123',1),
+(6,'zoya@123',2),
+(7,'nazil@123',3);
+select* from post;
+select* from marks;
+select id content from post;
+
+

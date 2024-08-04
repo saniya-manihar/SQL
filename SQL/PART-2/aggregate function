@@ -1,0 +1,8 @@
+ye pre define function hote hain jo pehe se define hote hain
+1.COUNT();
+2.MAX();
+3.MIN();
+4.SUM();
+5.AVG()
+EX.
+SELECT max(marks) FROM  STUDENT;

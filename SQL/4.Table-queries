@@ -1,0 +1,11 @@
+CREATE
+insert
+update
+alter
+truncate
+delete
+
+CREATE TABLE table_name(
+    column_name1 datatype,
+    column_name2 datatype,
+);

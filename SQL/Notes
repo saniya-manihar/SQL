@@ -1,0 +1,12 @@
+MYSQL hamara Data base hone wala hain and SQL langauge hain jo mysql ko padhne ke  liye  use hoti hain
+Database hamara ek collection hota han data ka  in a format that can be easuly accessed
+1. can store large data
+2. features like security and scalability
+3. easier to insert update or delete data and search
+DBMS kuch nhi hta ek layer hta hain DB ke upr like jab ham apne DB me koi function koi oreation ko perform krte hain tab usse ham DBMS bol dete han and DBMS ke ander hi hamara SQL aata hain
+
+///NEXT TOPIC
+SQL = also called Relational database (data stored in the form of table)
+eg. MySQL,Oracle,PostgreSQL etc
+NoSQL = also called NON- Relational database (data stored in the form of document/key-val /graph etc.)
+eg. mongodb,Cassandra,Neo4j etc

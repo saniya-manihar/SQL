@@ -1,0 +1,11 @@
+to update existing row
+UPDATE table_name;
+SET col1=val1, col2=val2
+WHERE condition
+ agr upr wale code se error show kare to ye line execute kareneg
+SET SQL_SAFE_UPDATEs=0;
+
+TO DELETE ESISTING row
+DELETE FROM table_name
+WHERE condition;
+//agr ham delete karte time where clause use ni kr rheh hajin to ye saarei wors ko delete kr dega to where clause use krna jaruri hain 
